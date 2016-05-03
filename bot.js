@@ -109,7 +109,7 @@ this.res.end();
 }
   else if(request.text && botRegexpopcorn.test(request.text)) {
 this.res.writeHead(200);
-postMessage("http://i.imgur.com/7CUAA5S.gifv");
+postMessage("http://i.imgur.com/7CUAA5S.gif");
 this.res.end();
 }
   
