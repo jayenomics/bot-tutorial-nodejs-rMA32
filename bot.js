@@ -102,7 +102,7 @@ function respond() {
       postMessage(siege2);
     this.res.end();
   }
-  else if(request.text && rattled.test(request.text)) {
+  else if(request.text && botRegexrattled.test(request.text)) {
 this.res.writeHead(200);
 postMessage("http://img3.wikia.nocookie.net/__cb20130515143649/fantendo/images/3/3c/Rattle-me-bones-1-.gif");
 this.res.end();
