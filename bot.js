@@ -132,7 +132,11 @@ this.res.writeHead(200);
 postMessage("http://wfleagues.net/board/8/trade-center");
 this.res.end();
 }
-  
+  else if(request.text && botRegexsnap.test(request.text)) {
+this.res.writeHead(200);
+postMessage("https://media.giphy.com/media/3oEduNITi4GfwxY1Fu/giphy.gif");
+this.res.end();
+}
   else {
     console.log("don't care");
     this.res.writeHead(200);
