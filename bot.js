@@ -37,7 +37,7 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://wfleagues.net/thread/2/rule-book");
+    postMessage("https://daddyleagues.com/wfl/rules");
     this.res.end();
   } 
   else if(request.text && botRegexGTA.test(request.text)) {
@@ -125,11 +125,11 @@ this.res.end();
 }
   else if(request.text && botRegexfa.test(request.text)) {
 this.res.writeHead(200);
-postMessage("http://wfleagues.net/board/6/free-agency");
+postMessage("https://daddyleagues.com/wfl/forum/forum/6158");
 }
   else if(request.text && botRegextrades.test(request.text)) {
 this.res.writeHead(200);
-postMessage("http://wfleagues.net/board/8/trade-center");
+postMessage("https://daddyleagues.com/wfl/forum/forum/6162");
 this.res.end();
 }
   else if(request.text && botRegexsnap.test(request.text)) {
